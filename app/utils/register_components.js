@@ -1,7 +1,7 @@
 /* global requirejs */
 /* global require */
 
-function registerComponents(container) {
+export default = function registerComponents(container) {
   var seen = requirejs._eak_seen;
   var templates = seen, match;
   if (!templates) { return; }
@@ -32,5 +32,3 @@ function registerComponent(container, name) {
 
   Ember.Handlebars.helper(name, Component);
 }
-
-export default registerComponents;

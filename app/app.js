@@ -19,4 +19,4 @@ App.initializer({
 });
 
 
-export default App;
+export { App };

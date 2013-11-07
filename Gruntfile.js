@@ -87,7 +87,9 @@ module.exports = function(grunt) {
                      'clean:debug',
                      'build:debug',
                      'expressServer:debug',
+                     'open:server',
                      'watch'
+
                      ]);
 
   grunt.registerTask('server:dist', "Build and preview a minified & production-ready version of your app.", [
@@ -113,6 +115,7 @@ module.exports = function(grunt) {
                      'karma:server',
                      'expressServer:debug',
                      'addKarmaToWatchTask',
+                     'open:server',
                      'watch'
                      ]);
 

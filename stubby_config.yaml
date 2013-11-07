@@ -1,0 +1,12 @@
+-  request:
+      url: ^/sample
+      method: [GET, OPTIONS]
+   response:
+      headers:
+         Content-Type: application/json
+         Access-Control-Allow-Origin: "*"
+         Access-Control-Allow-Headers: "Origin, Content-Type, Accept, Authorization-Token"
+
+      latency: 0
+      status: 200
+      file: mocks/sample.json

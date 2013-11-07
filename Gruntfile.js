@@ -88,6 +88,7 @@ module.exports = function(grunt) {
                      'build:debug',
                      'expressServer:debug',
                      'open:server',
+                     "stubby:stubsServer",
                      'watch'
 
                      ]);
